@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes & Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #fonte {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        h1{
+            margin: 20px;
+            color: crimson;
+        }
+    </style>
+</head>
+<body class="container mt-5">
+
+    <h1 class="text-center">Escolha uma fonte</h1>
+    
+    <div class="text-center mb-3">
+        <input type="button" class="btn btn-primary" value="Arial" onclick="document.getElementById('fonte').style.fontFamily='Arial';">
+        <input type="button" class="btn btn-secondary" value="Courier New" onclick="document.getElementById('fonte').style.fontFamily='Courier New';">
+        <input type="button" class="btn btn-success" value="Georgia" onclick="document.getElementById('fonte').style.fontFamily='Georgia';">
+        <input type="button" class="btn btn-danger" value="Verdana" onclick="document.getElementById('fonte').style.fontFamily='Verdana';">
+        <input type="button" class="btn btn-warning" value="Tahoma" onclick="document.getElementById('fonte').style.fontFamily='Tahoma';">
+    </div>
+
+    <div id="fonte" class="border p-3">
+        Eu sou aluno da ETEC Comendador João Rays! Me observe em diferentes fontes...
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

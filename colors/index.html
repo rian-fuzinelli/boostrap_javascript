@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores & Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .btn-pink{
+            color: #ffF;
+            background-color: #CD7C8D;
+        }
+
+        .btn-purple{
+            background-color: #A020F0;
+            color: #fff;
+        }
+        
+        h2{
+            margin: 30px;
+        }
+    </style>
+    <script>
+        function changeColorText(color) {
+            document.body.style.color = color;
+        }
+
+        function changeBottomColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body>
+    <h1>Escolha uma cor!</h1>
+
+    <h2>Cores para o texto:</h2>
+    <button class="btn btn-danger" onclick="changeColorText('red')">Vermelho</button>
+    <button class="btn btn-success" onclick="changeColorText('green')">Verde</button>
+    <button class="btn btn-primary" onclick="changeColorText('blue')">Azul</button>
+    <button class="btn btn-warning" onclick="changeColorText('orange')">Laranja</button>
+    <button class="btn btn-purple" onclick="changeColorText('purple')">Roxo</button>
+
+    <h2>Cores para o fundo:</h2>
+    <button class="btn btn-light" onclick="changeBottomColor('lightgrey')">Cinza Claro</button>
+    <button class="btn btn-info" onclick="changeBottomColor('lightblue')">Azul Claro</button>
+    <button class="btn btn-success" onclick="changeBottomColor('lightgreen')">Verde Claro</button>
+    <button class="btn btn-warning" onclick="changeBottomColor('yellow')">Amarelo</button>
+    <button class="btn btn-pink" onclick="changeBottomColor('pink')">Rosa</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
